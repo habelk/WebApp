@@ -14,10 +14,6 @@
 
     <xsl:variable name="was-resource-exists"
         select="/*[1]/*[name() eq 'resource-ref']/*[name() eq 'res-ref-name'][text() eq 'wm/DefaultWorkManager']" />
-    <xsl:variable name="ldap-env-entry-exists"
-        select="/*[1]/*[name() eq 'env-entry']/*[name() eq 'env-entry-name'][text() eq 'com.cerner.management.LDAPURL.1']" />
-    <xsl:variable name="enterprise-env-entry-exists"
-        select="/*[1]/*[name() eq 'env-entry']/*[name() eq 'env-entry-name'][text() eq 'rtms.connection.enterprise']" />
 
 
     <!-- process all elements, inject at specified xpaths if not already exists...identity transform the rest -->
